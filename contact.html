@@ -1,0 +1,158 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Mercure hotels</title>
+<meta charset="UTF-8">
+<link rel="stylesheet" type="text/css" href="style.css" media="all" />
+	<link rel="shortcut icon" href="style/images/favicon.ico" type="image/x-icon"/>
+<!--[if IE 7]><link rel="stylesheet" type="text/css" href="style/css/ie7.css" media="all" /><![endif]-->
+<script type="text/javascript" src="style/js/jquery-1.5.min.js"></script>
+<script type="text/javascript" src="style/js/ddsmoothmenu.js"></script>
+<script type="text/javascript" src="style/js/scripts.js"></script>
+<script type="text/javascript" src="style/js/jquery.infieldlabel.min.js"></script>
+<script type="text/javascript" src="style/js/twitter.min.js"></script>
+<script type="text/javascript">$(function(){ $("label").inFieldLabels(); });</script>
+<script type="text/javascript">
+getTwitters('twitter', {
+    id: 'elemisdesign',
+    count: 1,
+    enableLinks: true,
+    ignoreReplies: false,
+    template: '<span class="twitterPrefix"><span class="twitterStatus">%text%</span>',
+    newwindow: true
+});
+</script>
+</head>
+<body>
+<div id="container">
+  <!-- Begin Header Wrapper -->
+  <div id="page-top">
+    <div id="header-wrapper">
+      <!-- Begin Header -->
+      <div id="header">
+        <div id="logo"><a href="index.html"><img src="style/images/logo.png" alt="" /></a></div>
+        <!-- Logo -->
+        <!-- Begin Menu -->
+        <div id="menu-wrapper">
+          <div id="smoothmenu1" class="ddsmoothmenu">
+            <ul>
+              <li><a href="index.html">Головна</a></li>
+              <li><a href="portfolio.html">Галерея</a></li>
+              <li><a href="services.html">Сервіс</a></li>
+				<li><a href="registration.html">Реєстрація</a></li>
+              <li><a href="contact.html" class="selected">Контакти</a></li>
+            </ul>
+          </div>
+        </div>
+        <!-- End Menu -->
+      </div>
+      <!-- End Header -->
+    </div>
+  </div>
+  <!-- End Header Wrapper -->
+  <!-- Begin Wrapper -->
+  <div id="wrapper">
+    <!-- Begin Content -->
+    <div class="content">
+      <h3>Контактна інформаія</h3>
+      <p>Готель «Mercure» знаходиться в історичному центрі міста, поруч багато визначних місць, музеїв та архітектурних пам'ятників. Івано-Франківськ має міжнародний аеропорт, залізничний та автобусний вокзали. Відстань до аеропорту — 9 км, до вокзалів — близько 4 км.</p>
+      <br />
+      <!-- Begin Form -->
+      <div class="contact-left">
+        <div id="contact-form">
+          <!--begin:notice message block-->
+          <div id="note"></div>
+          <!--begin:notice message block-->
+          <form id="ajax-contact-form" method="post" action="#">
+            <div class="labels">
+              <p>
+                <label for="name">Ім'я</label>
+                <br />
+                <input class="required inpt" type="text" name="name" id="name" value="" />
+              </p>
+              <p>
+                <label for="email">E-Mail</label>
+                <br />
+                <input class="required inpt" type="text" name="email" id="email" value="" />
+              </p>
+            </div>
+            <div class="comments">
+              <p>
+                <textarea class="textbox" name="message" rows="6" cols="30"></textarea>
+              </p>
+              <br />
+              <p>
+                <label for="answer">5+1=?</label>
+                <br />
+                <input class="required inpt" type="text" name="answer" id="answer" value="" />
+              </p>
+            </div>
+            <label id="load" style="display:none"></label>
+            <input id="submit-button" class="button gray stripe" type="submit" name="submit" value="Надіслати" />
+          </form>
+        </div>
+        <!-- End Form -->
+      </div>
+      <div class="contact-right">
+        <div class="one-half">
+          <h4>Головний офіс</h4>
+          <p>Україна, Київ<br />
+            вул. Галицька, 111а<br />
+            <br />
+            <span class="highlight3">Моб:</span>+38 (066) 817-11-73<br />
+            <span class="highlight3">Дом:</span>+38 (0342) 55-23-30</p>
+        </div>
+        <div class="one-half last">
+          <h4>Філія</h4>
+          <p>Україна, Івано-Франківськ<br />
+            вул. Коновальця, 15<br />
+            <br />
+            <span class="highlight3">Fax:</span>+38 (067) 582-14-13 <br />
+            <span class="highlight3">Tel:</span>+38 (0342) 55-23-30</p>
+        </div>
+        <div class="clear"></div>
+        <br />
+		  
+		  <iframe width="400" height="188" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"  src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2621.940556662634!2d24.710097736752527!3d48.916524775628716!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4730c16a0a7c0e47%3A0x8bf87c6dfb153463!2z0IbQstCw0L3Qvi3QpNGA0LDQvdC60ZbQstGB0YzQutC40Lkg0YPQvdGW0LLQtdGA0YHQuNGC0LXRgiDQv9GA0LDQstCwINGW0LzQtdC90ZYg0JrQvtGA0L7Qu9GPINCU0LDQvdC40LvQsCDQk9Cw0LvQuNGG0YzQutC-0LPQvg!5e0!3m2!1suk!2sus!4v1511972106554" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+		  
+      </div>
+      <div class="clear"></div>
+      <div class="divider"></div>
+      <div id="twitter-wrapper">
+        <div id="twitter"></div>
+        <span class="username">Follow <a href="#">elemisdesign</a></span> </div>
+      <div class="clear"></div>
+    </div>
+    <!-- End Content -->
+  </div>
+  <!-- End Wrapper -->
+  <div class="clearfix"></div>
+  <div class="push"></div>
+  <!-- Begin Footer -->
+  <div id="footer-wrapper">
+    <div id="footer">
+      <div id="footer-content">
+        <!-- Begin Copyright -->
+        <div id="copyright">
+          <p>Copyright &copy; Domain Name</a> - All Rights Reserved | Design By Nazar Mytskan</p>
+        </div>
+        <!-- End Copyright -->
+        <!-- Begin Social Icons -->
+        <div id="socials">
+          <ul>
+            <li><a href="#"><img src="style/images/icon-rss.png" alt="" /></a></li>
+            <li><a href="#"><img src="style/images/icon-twitter.png" alt="" /></a></li>
+            <li><a href="#"><img src="style/images/icon-dribble.png" alt="" /></a></li>
+            <li><a href="#"><img src="style/images/icon-tumblr.png" alt="" /></a></li>
+            <li><a href="#"><img src="style/images/icon-flickr.png" alt="" /></a></li>
+            <li><a href="#"><img src="style/images/icon-facebook.png" alt="" /></a></li>
+          </ul>
+        </div>
+        <!-- End Social Icons -->
+      </div>
+    </div>
+  </div>
+  <!-- End Footer -->
+</div>
+</body>
+</html>

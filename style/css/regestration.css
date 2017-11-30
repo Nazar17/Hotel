@@ -1,0 +1,425 @@
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+html {
+  overflow-y: scroll;
+}
+
+body {
+
+  font-family: 'Titillium Web', sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: #1ab188;
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+}
+a:hover {
+  color: #179b77;
+}
+
+.form {
+  background: rgba(19, 35, 47, 0.9);
+  padding: 20px;
+  max-width: 600px;
+  margin: -20px auto;
+  border-radius: 4px;
+  box-shadow: 0 4px 10px 4px rgba(19, 35, 47, 0.3);
+}
+
+.tab-group {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 40px 0;
+}
+.tab-group:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.tab-group li a {
+  display: block;
+  text-decoration: none;
+  padding: 15px;
+  background: rgba(160, 179, 176, 0.25);
+  color: #a0b3b0;
+  font-size: 20px;
+  float: left;
+  width: 50%;
+  text-align: center;
+  cursor: pointer;
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+}
+.tab-group li a:hover {
+  background: #179b77;
+  color: #ffffff;
+}
+.tab-group .active a {
+  background: #1ab188;
+  color: #ffffff;
+}
+
+.tab-content > div:last-child {
+  display: none;
+}
+
+h1 {
+  text-align: center;
+  color: #ffffff;
+  font-weight: 300;
+  margin: 0 0 40px;
+}
+
+label {
+  position: absolute;
+  -webkit-transform: translateY(6px);
+          transform: translateY(6px);
+  left: 13px;
+  color: rgba(255, 255, 255, 0.5);
+  -webkit-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+  -webkit-backface-visibility: hidden;
+  pointer-events: none;
+  font-size: 22px;
+}
+label .req {
+  margin: 2px;
+  color: #1ab188;
+}
+
+label.active {
+  -webkit-transform: translateY(50px);
+          transform: translateY(50px);
+  left: 2px;
+  font-size: 14px;
+}
+label.active .req {
+  opacity: 0;
+}
+
+label.highlight {
+  color: #ffffff;
+}
+
+input, textarea {
+  font-size: 22px;
+  display: block;
+  width: 100%;
+  padding: 5px 10px;
+  background: none;
+  background-image: none;
+  border: 1px solid #a0b3b0;
+  color: #ffffff;
+  border-radius: 0;
+  -webkit-transition: border-color .25s ease, box-shadow .25s ease;
+  transition: border-color .25s ease, box-shadow .25s ease;
+}
+input:focus, textarea:focus {
+  outline: 0;
+  border-color: #1ab188;
+}
+
+textarea {
+  border: 2px solid #a0b3b0;
+  resize: vertical;
+}
+
+.field-wrap {
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.top-row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.top-row > div {
+  float: left;
+  width: 48%;
+  margin-right: 4%;
+}
+.top-row > div:last-child {
+  margin: 0;
+}
+
+.button {
+  border: 0;
+    outline: none;
+    border-radius: 0;
+    font-size: 2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    background: #1ab188;
+    color: #ffffff;
+    text-align: center;
+    -webkit-transition: all 0.5s ease;
+}
+.button:hover, .button:focus {
+  background: #179b77;
+}
+
+.button-block {
+  display: block;
+  width: 100%;
+}
+
+.forgot {
+  margin-top: -20px;
+  text-align: right;
+}
+#wrapper ul {
+	padding: 0 0 20px 0;
+	display: block;
+	overflow: hidden;
+}
+#wrapper ul li {
+	line-height: 20px;
+	list-style: none;
+	display: block;
+	background: transparent url(style/images/bullet.jpg) no-repeat left 8px;
+	padding-left: 20px;
+}
+#wrapper ul.check-list {
+	padding: 0 0 20px 0;
+	display: block;
+	overflow: hidden;
+}
+#wrapper ul.check-list li {
+	line-height: 20px;
+	list-style: none;
+	display: block;
+	background: transparent url(style/images/check.png) no-repeat left 0px;
+	padding-left: 30px;
+}
+#wrapper {
+	width: 960px;
+	margin: 0 auto;
+	padding-top: 0;
+	line-height: 20px;
+}
+#header-wrapper {
+	min-width: 960px;
+	height: 88px;
+	background: transparent url(header-bg.png) repeat-x center bottom;
+}
+#header {
+	width: 960px;
+	height: 88px;
+	margin: -3px auto;
+	position: relative;
+	z-index: 999;
+}
+#page-top {
+	padding-bottom: 70px;
+}
+#logo {
+	float: left;
+	position: absolute;
+	bottom: -18px;
+	left: 0;
+}
+#menu-wrapper {
+	float: right;
+	position: absolute;
+	bottom: 6px;
+	right: 0;
+    text-transform: uppercase;
+}
+#footer-wrapper {
+	height: 45px;
+	padding-top:100px;
+}
+#footer {
+	min-width: 960px;
+	height: 45px;
+	background: transparent url(style/images/footer-bg.png) repeat-x top center;
+}
+#footer-content {
+	width: 960px;
+	height: 45px;
+	margin: 0 auto;
+	position: relative;
+}
+#copyright {
+	text-align: center;
+}
+#copyright p {
+	font-size: 14px;
+	margin: 0;
+}
+#socials {
+	float: right;
+	position: absolute;
+	top: 3px;
+	right: 0;
+}
+#socials ul li {
+	float: left;
+	margin-left: 10px;
+	background: none;
+}
+/*-----------------------------------------------------------------------------------*/
+/*	MENU
+/*-----------------------------------------------------------------------------------*/
+
+.ddsmoothmenu {
+	font-family: 'MidoMedium';
+	font-size: 17px;
+	z-index: 1000;
+	position: relative;
+	text-shadow: 0px 1px 0px #efefef;
+}
+.ddsmoothmenu ul {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+/*Top level list items*/
+.ddsmoothmenu ul li {
+	position: relative;
+    display: inline;
+    float: left;
+    clear: none;
+    margin-left: 21px;
+    padding-left: 86px;
+    border: double;
+    padding: 7px;
+}
+/*Top level menu link items style*/
+.ddsmoothmenu ul li a {
+	display: block; /*background of menu items (default state)*/
+	text-decoration: none;
+	position: relative;
+	text-shadow: 0px 1px 0px #efefef;
+}
+* html .ddsmoothmenu ul li a { /*IE6 hack to get sub menu links to behave correctly*/
+	display: inline-block;
+}
+.ddsmoothmenu ul li a, .ddsmoothmenu ul li a:visited {
+	color: #565656;
+}
+.ddsmoothmenu ul li a.selected { /*CSS class that's dynamically added to the currently active menu items' LI A element*/
+	color: #5d8ba6;
+}
+.ddsmoothmenu ul li a:hover {
+	color: #5d8ba6;
+}
+/*1st sub level menu*/
+.ddsmoothmenu ul li ul {
+	background: none;
+	font-family: 'MidoMedium';
+	position: absolute;
+	padding: 22px 0 0 0;
+	left: 0;
+	display: block; /*collapse all sub menus to begin with*/
+	visibility: hidden;
+	border-bottom: 1px solid #cdcdcd;
+}
+/*Sub level menu list items (undo style from Top level List Items)*/
+.ddsmoothmenu ul li ul li {
+	margin-left:0;
+	padding-left: 0;
+	display: list-item;
+	float: none;
+	background-color: #e1e1e1;
+	border-right: 1px solid #cdcdcd;
+	border-left: 1px solid #cdcdcd;
+}
+/*All subsequent sub menu levels vertical offset after 1st level sub menu */
+.ddsmoothmenu ul li ul li ul {
+	top: 0;
+	padding-top: 0;
+	border-bottom: 1px solid #cdcdcd;
+	border-top: 1px solid #cdcdcd;
+}
+/* Sub level menu links style */
+.ddsmoothmenu ul li ul li a {
+	font-size: 13px;
+	width: 140px; /*width of sub menus*/
+	padding: 7px 12px;
+	margin: 0;
+	line-height: 1;
+}
+/* Sub level menu links style */
+.ddsmoothmenu ul li ul li ul li a {
+	font-size: 13px;
+}
+.ddsmoothmenu ul li ul li:first-child {
+	padding-top: 5px;
+}
+.ddsmoothmenu ul li ul li:last-child {
+	padding-bottom: 6px;
+}
+.ddsmoothmenu ul li ul li ul li:first-child {
+	padding-top: 4px;
+}
+.ddsmoothmenu ul li ul li ul li:last-child {
+	padding-bottom: 5px;
+}
+/* Holly Hack for IE \*/
+* html .ddsmoothmenu {
+	height: 1%;
+} /*Holly Hack for IE7 and below*/
+/*-----------------------------------------------------------------------------------*/
+/*	SLIDER
+/*-----------------------------------------------------------------------------------*/
+
+#piecemaker-container {
+	display:block;
+	height:460px;
+	overflow:hidden;
+	margin: -10px auto 40px;
+	width: 960px;
+}
+/*-----------------------------------------------------------------------------------*/
+/*	COLUMNS
+/*-----------------------------------------------------------------------------------*/
+
+.one-half {
+	width:48%;
+}
+.one-third {
+	width:30.66%;
+}
+.two-third {
+	width:65.33%;
+}
+.one-fourth {
+	width:22%;
+}
+.three-fourth {
+	width:74%;
+}
+.one-fifth {
+	width:16.8%;
+}
+.two-fifth {
+	width:37.6%;
+}
+.three-fifth {
+	width:58.4%;
+}
+.four-fifth {
+	width:67.2%;
+}
+.one-sixth {
+	width:13.33%;
+}
+.five-sixth {
+	width:82.67%;
+}
+.one-half, .one-third, .two-third, .three-fourth, .one-fourth, .one-fifth, .two-fifth, .three-fifth, .four-fifth, .one-sixth, .five-sixth {
+	position:relative;
+	margin-right:4%;
+	float:left;
+}
+.last {
+	margin-right:0 !important;
+	clear:right;
+}
